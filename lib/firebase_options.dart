@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -47,35 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCQ0iOO3ws4pSdEgkN0ilrXvrU63POFBuo',
-    appId: '1:442670226877:web:12893f28aa0bae4fe746d4',
-    messagingSenderId: '442670226877',
-    projectId: 'stela4-2f630',
-    //projectId: 'stela2023-d03e4',
-    authDomain: 'stela4-2f630.firebaseapp.com',
-    //authDomain: 'stela2023-d03e4.firebaseapp.com',
-    storageBucket: 'stela4-2f630.appspot.com',
-    //storageBucket: 'stela2023-d03e4.appspot.com',
-
-    measurementId: 'G-NGPZ0055V9',
+    apiKey: 'AIzaSyBzQ8LcZXsyS6tLlU_k_WO4WYTGlhwxqwg',
+    appId: '1:396384933688:web:54f68f7c6c674b2a4153cd',
+    messagingSenderId: '396384933688',
+    projectId: 'stela23-f9a52',
+    authDomain: 'stela23-f9a52.firebaseapp.com',
+    storageBucket: 'stela23-f9a52.appspot.com',
+    measurementId: 'G-K976TBCJCN',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCxunCAVpeP6_W7Bu1_Bf4pasGB9OY2XtM',
-    appId: '1:442670226877:android:2c2a7b28368db9a3e746d4',
-    messagingSenderId: '442670226877',
-    projectId: 'stela4-2f630',
-    storageBucket: 'stela4-2f630.appspot.com',
+    apiKey: 'AIzaSyBR7Olr9l75eipxfmUR7cwa0DkrAUGzOOc',
+    appId: '1:396384933688:android:5a11646e9f15f8624153cd',
+    messagingSenderId: '396384933688',
+    projectId: 'stela23-f9a52',
+    storageBucket: 'stela23-f9a52.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDhD3lnL0xIpLEhVEGd3pYoIgNqxECVBV4',
-    appId: '1:442670226877:ios:515e099986b6e6bee746d4',
-    messagingSenderId: '442670226877',
-    projectId: 'stela4-2f630',
-    storageBucket: 'stela4-2f630.appspot.com',
-    iosClientId:
-        '442670226877-00ngn3t407sc1vkp5dt43uff5f21ncop.apps.googleusercontent.com',
+    apiKey: 'AIzaSyANZ0qRVK5UuMZ5iHmm9lglh30Gimz3P58',
+    appId: '1:396384933688:ios:979751378d75377c4153cd',
+    messagingSenderId: '396384933688',
+    projectId: 'stela23-f9a52',
+    storageBucket: 'stela23-f9a52.appspot.com',
+    iosClientId: '396384933688-tuka347ni20hk5viuikncjo2iimtepnc.apps.googleusercontent.com',
+    iosBundleId: 'com.example.stelaApp',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyANZ0qRVK5UuMZ5iHmm9lglh30Gimz3P58',
+    appId: '1:396384933688:ios:979751378d75377c4153cd',
+    messagingSenderId: '396384933688',
+    projectId: 'stela23-f9a52',
+    storageBucket: 'stela23-f9a52.appspot.com',
+    iosClientId: '396384933688-tuka347ni20hk5viuikncjo2iimtepnc.apps.googleusercontent.com',
     iosBundleId: 'com.example.stelaApp',
   );
 }
