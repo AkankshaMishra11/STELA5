@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
-import 'package:stela_app/screens/experimentList.dart';
+import 'package:stela_app/screens/BasicsexperimentList.dart'
+    as BasicsexperimentList;
+import 'package:stela_app/screens/NumpyexperimentList copy.dart';
+import 'package:stela_app/screens/MatplotlibexperimentList copy.dart';
+import 'package:stela_app/screens/PandasexperimentList copy.dart';
+import 'package:stela_app/screens/SeabornexperimentList copy.dart';
+import 'package:stela_app/screens/TensorflowexperimentList copy.dart';
+import 'package:stela_app/screens/SklearnexperimentList copy.dart';
+import 'package:stela_app/screens/KerasexperimentList copy.dart';
+import 'package:stela_app/screens/PytorchexperimentList copy.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
+
+var expNum = 10;
 
 class Experiment extends StatelessWidget {
   @override
@@ -31,13 +42,15 @@ class Experiment extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Container(
+                  /*Container(
                       padding: EdgeInsets.all(10),
-                      child: Text('Experiment No. ' + expNo[expNum],
+                      child: Text(
+                          'Experiment No. ' +
+                              expNo[BasicsexperimentList.expNum],
                           style: TextStyle(
                               fontSize: 20,
                               fontFamily: 'PTSerif',
-                              fontWeight: FontWeight.bold))), // Heading
+                              fontWeight: FontWeight.bold))),*/ // Heading
                   Container(
                     padding: EdgeInsets.all(10),
                     width: double.infinity,
@@ -64,7 +77,7 @@ class Experiment extends StatelessWidget {
                       ),
                     ),
                   ), // AIM text
-                  if (procedure != "") ...[
+                  /*if (procedure != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
@@ -113,7 +126,7 @@ class Experiment extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ], // ALGORITHM text
+                  ], // ALGORITHM text*/
                   if (program != "") ...[
                     Container(
                       padding: EdgeInsets.all(10),

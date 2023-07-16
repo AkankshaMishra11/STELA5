@@ -4,9 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
-import 'package:stela_app/screens/experimentList.dart';
+import 'package:stela_app/screens/BasicsexperimentList.dart'
+    as BasicsexperimentList;
+import 'package:stela_app/screens/NumpyexperimentList copy.dart';
+import 'package:stela_app/screens/MatplotlibexperimentList copy.dart';
+import 'package:stela_app/screens/PandasexperimentList copy.dart';
+import 'package:stela_app/screens/SeabornexperimentList copy.dart';
+import 'package:stela_app/screens/TensorflowexperimentList copy.dart';
+import 'package:stela_app/screens/SklearnexperimentList copy.dart';
+import 'package:stela_app/screens/KerasexperimentList copy.dart';
+import 'package:stela_app/screens/PytorchexperimentList copy.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:stela_app/constants/userDetails.dart';
+
+//var expNum = 10;
 
 class AssessmentModule extends StatefulWidget {
   @override
@@ -17,7 +28,7 @@ class _AssessmentModuleState extends State<AssessmentModule> {
   final GlobalKey webViewKey = GlobalKey();
 
   InAppWebViewController? webViewController;
-  var link = document?["Assessment " + expNo[expNum]];
+  var link = document?["Assessment " + expNo[BasicsexperimentList.expNum]];
 
   InAppWebViewGroupOptions options = InAppWebViewGroupOptions(
       crossPlatform: InAppWebViewOptions(

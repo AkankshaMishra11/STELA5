@@ -4,7 +4,16 @@ import 'package:stela_app/constants/experimentDesc.dart';
 import 'package:stela_app/screens/modules.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
-import 'package:stela_app/screens/experimentList.dart';
+import 'package:stela_app/screens/BasicsexperimentList.dart';
+import 'package:stela_app/screens/BasicsexperimentList.dart';
+import 'package:stela_app/screens/NumpyexperimentList copy.dart';
+import 'package:stela_app/screens/MatplotlibexperimentList copy.dart';
+import 'package:stela_app/screens/PandasexperimentList copy.dart';
+import 'package:stela_app/screens/SeabornexperimentList copy.dart';
+import 'package:stela_app/screens/TensorflowexperimentList copy.dart';
+import 'package:stela_app/screens/SklearnexperimentList copy.dart';
+import 'package:stela_app/screens/KerasexperimentList copy.dart';
+import 'package:stela_app/screens/PytorchexperimentList copy.dart';
 
 var expNum;
 
@@ -105,7 +114,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ExperimentList()),
+                                  builder: (context) => BasicsExperimentList()),
                             );
                           },
                         );
@@ -188,7 +197,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ExperimentList()),
+                                  builder: (context) => BasicsExperimentList()),
                             );
                           },
                         ),
@@ -229,7 +238,8 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => ExperimentList()),
+                                        builder: (context) =>
+                                            NumpyExperimentList()),
                                   );
                                 },
                               ),
@@ -275,7 +285,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  ExperimentList()),
+                                                  MatplotlibExperimentList()),
                                         );
                                       },
                                     ),
@@ -338,7 +348,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        ExperimentList()),
+                                                        PandasExperimentList()),
                                               );
                                             },
                                           ),
@@ -392,7 +402,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                       context,
                                                       MaterialPageRoute(
                                                           builder: (context) =>
-                                                              ExperimentList()),
+                                                              SeabornExperimentList()),
                                                     );
                                                   },
                                                 ),
@@ -455,7 +465,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                             MaterialPageRoute(
                                                                 builder:
                                                                     (context) =>
-                                                                        ExperimentList()),
+                                                                        TensorflowExperimentList()),
                                                           );
                                                         },
                                                       ),
@@ -519,7 +529,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                                   MaterialPageRoute(
                                                                       builder:
                                                                           (context) =>
-                                                                              ExperimentList()),
+                                                                              SklearnExperimentList()),
                                                                 );
                                                               },
                                                             ),
@@ -572,7 +582,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                                         context,
                                                                         MaterialPageRoute(
                                                                             builder: (context) =>
-                                                                                ExperimentList()),
+                                                                                KerasExperimentList()),
                                                                       );
                                                                     },
                                                                   ),
@@ -613,7 +623,7 @@ class _PythonTutorialState extends State<PythonTutorial> {
                                                                               () {
                                                                             Navigator.push(
                                                                               context,
-                                                                              MaterialPageRoute(builder: (context) => ExperimentList()),
+                                                                              MaterialPageRoute(builder: (context) => PytorchExperimentList()),
                                                                             );
                                                                           },
                                                                         ),

@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-//import 'package:stela_app/screens/experimentList.dart';
+//import 'import 'package:stela_app/screens/BasicsexperimentList.dart';
+import 'package:stela_app/screens/NumpyexperimentList copy.dart';
+import 'package:stela_app/screens/MatplotlibexperimentList copy.dart';
+import 'package:stela_app/screens/PandasexperimentList copy.dart';
+import 'package:stela_app/screens/SeabornexperimentList copy.dart';
+import 'package:stela_app/screens/TensorflowexperimentList copy.dart';
+import 'package:stela_app/screens/SklearnexperimentList copy.dart';
+import 'package:stela_app/screens/KerasexperimentList copy.dart';
+import 'package:stela_app/screens/PytorchexperimentList copy.dart';
 import 'package:stela_app/screens/pythontutorial.dart';
 import 'package:stela_app/screens/profile.dart';
 

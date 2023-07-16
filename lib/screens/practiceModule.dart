@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:stela_app/constants/colors.dart';
-import 'package:stela_app/screens/experimentList.dart';
+import 'package:stela_app/screens/BasicsexperimentList.dart' as BasicsexperimentList;
+import 'package:stela_app/screens/NumpyexperimentList copy.dart';
+import 'package:stela_app/screens/MatplotlibexperimentList copy.dart';
+import 'package:stela_app/screens/PandasexperimentList copy.dart';
+import 'package:stela_app/screens/SeabornexperimentList copy.dart';
+import 'package:stela_app/screens/TensorflowexperimentList copy.dart';
+import 'package:stela_app/screens/SklearnexperimentList copy.dart';
+import 'package:stela_app/screens/KerasexperimentList copy.dart';
+import 'package:stela_app/screens/PytorchexperimentList copy.dart';
 import 'package:stela_app/screens/profile.dart';
 import 'package:stela_app/screens/subjects.dart';
 import 'package:stela_app/constants/experimentDesc.dart';
+
+//var expNum = 10;
 
 class PracticeModule extends StatefulWidget {
   @override
@@ -58,7 +68,8 @@ class _PracticeModuleState extends State<PracticeModule> {
                 Container(
                   padding: EdgeInsets.all(10),
                   child: Text(
-                    'PRACTICE QUESTIONS\nExperiment ' + expNo[expNum],
+                    'PRACTICE QUESTIONS\nExperiment ' +
+                        expNo[BasicsexperimentList.expNum],
                     style: TextStyle(
                         fontSize: 15,
                         fontFamily: 'PTSerif-Bold',

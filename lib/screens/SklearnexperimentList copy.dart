@@ -7,12 +7,12 @@ import 'package:stela_app/screens/subjects.dart';
 
 var expNum;
 
-class ExperimentList extends StatefulWidget {
+class SklearnExperimentList extends StatefulWidget {
   @override
-  _ExperimentListState createState() => _ExperimentListState();
+  _SklearnExperimentListState createState() => _SklearnExperimentListState();
 }
 
-class _ExperimentListState extends State<ExperimentList> {
+class _SklearnExperimentListState extends State<SklearnExperimentList> {
   final colChildren = <Widget>[];
 
   @override
@@ -76,7 +76,7 @@ class _ExperimentListState extends State<ExperimentList> {
                                   textAlign: TextAlign.center)),
                           onPressed: () {
                             expNum = index;
-                            getExperiment(index);
+                            getSklearnExperiment(index);
                             Navigator.push(
                               context,
                               MaterialPageRoute(
